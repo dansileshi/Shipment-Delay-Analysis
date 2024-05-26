@@ -4,20 +4,22 @@
 This project utilizes shipment booking and GPS tracking data to analyze delivery performance and predict potential delays. The solutions for Task 1 and Task 2 are implemented in Python and involve data preprocessing, integration with the Google Maps API, and detailed analysis of on-time deliveries and delay predictions. This document provides an overview of the methodologies, project structure, and setup instructions.
 
 ## Project Structure
-project_name/
-│
-├── data/ # Folder containing all data files.
-│
-├── results/ # Output files and artifacts such as figures and logs.
-│
-├── preprocessing.py # Script for preprocessing data for model training.
-├── model_train.py # Script for training the initial machine learning model.
-├── model_tuning.py # Script for hyperparameter tuning.
-├── predict.py # Script for predicting delays on new data.
-├── Task1.py # Script for computing on-time delivery rates.
-├── Task2.py # Script for predicting delays and notifying shippers.
-│
-└── README.md # Overview and documentation of the project.
+
+    project_name/
+    │
+    ├── data/                # Folder containing all data files.
+    │
+    ├── results/             # Output files and artifacts such as figures and logs.
+    │
+    ├── preprocessing.py     # Script for preprocessing data for model training.
+    ├── model_train.py       # Script for training the initial machine learning model.
+    ├── model_tuning.py      # Script for hyperparameter tuning.
+    ├── predict.py           # Script for predicting delays on new data.
+    ├── Task1.py             # Script for computing on-time delivery rates.
+    ├── Task2.py             # Script for predicting delays and notifying shippers.
+    │
+    └── README.md            # Overview and documentation of the project.
+
 
 
 ## Task 1: On-Time Delivery Analysis
