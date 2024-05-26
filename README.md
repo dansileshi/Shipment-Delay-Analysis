@@ -1,4 +1,4 @@
-# Project Title: Shipment Delay Analysis
+# Shipment Delay Analysis
 
 ## Overview
 This project utilizes shipment booking and GPS tracking data to analyze delivery performance and predict potential delays. The solutions for Task 1 and Task 2 are implemented in Python and involve data preprocessing, integration with the Google Maps API, and detailed analysis of on-time deliveries and delay predictions. This document provides an overview of the methodologies, project structure, and setup instructions.
