@@ -125,7 +125,6 @@ Task 3 involves building a machine learning model to predict the likelihood of d
 
 **Outputs**:
 - `best_hyperparameters_v1.yaml` (stored in the `results` folder)
-- `model_v2/model_pipeline.joblib` (stored in the `model_repository` folder)
 
 **Key Steps**:
 - Load the preprocessed data.
