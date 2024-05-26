@@ -21,8 +21,10 @@ model_params:
 # Version settings for saving models and results
 versioning:
   model_version: 1
-  results_dir: './results/'
-  model_repository: './model_repository/'
+
+  
+results_dir: './results/'
+model_repository: './model_repository/'
 
 # Random seed
 seed: 4321
