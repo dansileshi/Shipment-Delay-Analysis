@@ -1,0 +1,3 @@
+model__criterion: entropy
+model__max_depth: 30
+model__n_estimators: 100

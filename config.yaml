@@ -1,0 +1,28 @@
+# Configuration for data paths
+data_paths:
+  data_dir: './data/'
+  gps_file: 'gps_data.csv'
+  shipments_file: 'shipment_bookings.csv'
+  preprocessed_file: 'preprocessed_data.csv'
+  new_bookings_file: 'New_bookings.csv'
+
+# API configuration
+api_settings:
+  osrm_base_url: 'http://router.project-osrm.org/route/v1/driving/'
+
+# Model settings
+model_params:
+  random_forest:
+    n_estimators: 100
+    criterion: 'entropy'
+    max_depth: 30
+    random_state: 42
+
+# Version settings for saving models and results
+versioning:
+  model_version: 1
+  results_dir: './results/'
+  model_repository: './model_repository/'
+
+# Random seed
+seed: 4321
