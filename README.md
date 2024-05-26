@@ -131,11 +131,11 @@ Task 3 involves building a machine learning model to predict the likelihood of d
 - Load the preprocessed data.
 - Define feature columns and target variables.
 - Split the data into training and testing sets.
-- Set up preprocessing pipelines and the model (e.g., a RandomForestClassifier).
+- Set up preprocessing pipelines and the model ( I used RandomForestClassifier).
 - Define a parameter grid for hyperparameter tuning.
 - Use GridSearchCV to find the best hyperparameters.
 - Train the model with the best hyperparameters and evaluate its performance.
-- Save the optimized model and the best hyperparameters.
+- Save the the best hyperparameters.
 
 ### predict.py
 
