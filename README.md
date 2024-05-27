@@ -11,6 +11,8 @@ This project utilizes shipment booking and GPS tracking data to analyze delivery
     │
     ├── results/             # Output files and artifacts such as figures and logs.
     │
+    ├──model_repository/model_v1  # trained model repository
+    │
     ├── preprocessing.py     # Script for preprocessing data for model training.
     ├── model_train.py       # Script for training the initial machine learning model.
     ├── model_tuning.py      # Script for hyperparameter tuning.
@@ -22,19 +24,32 @@ This project utilizes shipment booking and GPS tracking data to analyze delivery
 
 
 
+
+
 ## Task 1: On-Time Delivery Analysis
-The `Task1.py` script computes the percentage of shipments delivered within their scheduled time frames. The key steps involved are:
-- **Data Loading**: Shipment booking and GPS data are loaded from the `data/` directory.
-- **Data Filtering**: Data is filtered to include only shipments within the period from October 1st to December 31st, 2023.
-- **Computation**: The script calculates the proportion of shipments that arrived within 30 minutes of their scheduled delivery windows.
-- **Output**: Results are saved in the `results/` folder, including any relevant visualizations.
+The `Task1.py` script evaluates the punctuality of shipments by calculating the percentage that were delivered on time, based on their scheduled delivery windows. Here’s a concise overview of the process:
+
+- **Data Loading**: The script loads shipment booking and GPS tracking data from the `data/` directory.
+
+- **Data Filtering**: It filters this data to focus only on shipments scheduled for delivery between October 1st and December 31st, 2023.
+
+- **Computation**: The script determines which shipments were delivered within a 30-minute grace period of their scheduled times. This step involves comparing the actual delivery timestamps with the scheduled delivery windows to identify timely versus delayed shipments.
+
+- **Output**: The final percentage of on-time deliveries is computed and printed.
+
+
 
 ## Task 2: Delay Prediction and Notification
 The `Task2.py` script uses real-time data to predict potential shipment delays and automatically generates notifications for stakeholders. The process is outlined as follows:
+
 - **Data Integration**: Real-time GPS data is integrated with static shipment data.
+
 - **Google Maps API**: This API is utilized to fetch current travel times and distances,to estimate the time of arrival based on average speed (crude estimation).
+
 - **Delay Prediction**: For each shipment, the script calculates whether the updated estimated time of arrival (ETA) will exceed the scheduled delivery time.
+
 - **Notifications**: If a delay is predicted, the script logs this information and can be used to trigger notifications to relevant parties.
+
 - **Output**: All findings, specifically the earliest time a possible delay is detected, are stored in the `results/processed_shipment_data.csv` and `results/delayed_shipments_and_earliest_notification_time.csv`.
 
 ## Task 3: Predicting the Likelihood of Delay
@@ -61,7 +76,6 @@ Task 3 involves building a machine learning model to predict the likelihood of d
 - Save the processed data for later use.
 
 ### model_train.py
-
 
 **Purpose**:
 - Train an initial machine learning model using the preprocessed data.
